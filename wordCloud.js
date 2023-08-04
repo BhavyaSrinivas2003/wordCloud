@@ -19,6 +19,8 @@ function addBtn() {
     let inputElementValue = inputElement.value;
     spanElement.classList.add("m-3");
     spanElement.style.fontSize = Math.floor(Math.random() * 40) + "px";
+    let wordsContainer = document.getElementById("wordsContainer");
+    let paraElement = document.getElementById("errorMsg");
     if (inputElementValue !== "") {
         spanElement.textContent = inputElementValue;
         wordsContainer.appendChild(spanElement);
