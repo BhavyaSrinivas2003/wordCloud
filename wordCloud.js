@@ -11,20 +11,20 @@ function cloudFun() {
         spanElement.classList.add("m-3");
         wordsContainer.appendChild(spanElement);
     }
+}
 
-    function addBtn() {
-        let spanElement = document.createElement("span");
-        let inputElement = document.getElementById("userInput");
-        let inputElementValue = inputElement.value;
-        spanElement.classList.add("m-3");
-        spanElement.style.fontSize = Math.floor(Math.random() * 40) + "px";
-        if (inputElementValue !== "") {
-            spanElement.textContent = inputElementValue;
-            wordsContainer.appendChild(spanElement);
-            inputElement.value = "";
-        } else {
-            paraElement.textContent = "Please enter a word";
-        }
-
+function addBtn() {
+    let spanElement = document.createElement("span");
+    let inputElement = document.getElementById("userInput");
+    let inputElementValue = inputElement.value;
+    spanElement.classList.add("m-3");
+    spanElement.style.fontSize = Math.floor(Math.random() * 40) + "px";
+    if (inputElementValue !== "") {
+        spanElement.textContent = inputElementValue;
+        wordsContainer.appendChild(spanElement);
+        inputElement.value = "";
+    } else {
+        paraElement.textContent = "Please enter a word";
     }
+
 }
